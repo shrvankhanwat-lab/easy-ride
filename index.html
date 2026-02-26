@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Easy Ride – Auto Booking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+    }
+    header {
+      background: #ffcc00;
+      padding: 15px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 500px;
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    button {
+      background: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #333;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+<header>Easy Ride</header>
+
+<div class="container">
+  <h3>Book Auto (Same Day)</h3>
+
+  <form onsubmit="sendBooking(); return false;">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="tel" id="mobile" placeholder="Mobile Number" required>
+    <input type="text" id="pickup" placeholder="Pickup Location" required>
+    <input type="text" id="drop" placeholder="Drop Location" required>
+    <input type="time" id="time" required>
+
+    <button type="submit">Book Auto</button>
+  </form>
+</div>
+
+<footer>
+  © 2026 Easy Ride | Local Auto Service
+</footer>
+
+<script>
+function sendBooking() {
+  alert("Booking received! Easy Ride will contact you soon.");
+}
+</script>
+
+</body>
+</html>
